@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connexion ENT HDF — Formulaire</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#f0f4ff;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+    .box{background:#fff;padding:28px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.08);width:360px}
+    label{display:block;margin-top:10px;font-size:14px;color:#333}
+    input{width:100%;padding:10px;margin-top:6px;border:1px solid #d6d9e6;border-radius:8px;font-size:14px}
+    button{margin-top:16px;width:100%;padding:11px;border:0;border-radius:8px;background:#2463ff;color:#fff;font-weight:600;cursor:pointer}
+    .note{font-size:13px;color:#666;margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Se connecter — ENT HDF</h2>
+
+    <!-- CHANGE action si nécessaire -->
+    <form method="POST" action="https://connexion.enthdf.fr/">
+      <label for="email">Adresse email</label>
+      <input id="email" name="email" type="email" placeholder="ton@email.fr" required>
+
+      <label for="password">Mot de passe</label>
+      <input id="password" name="password" type="password" placeholder="••••••••" required>
+
+      <button type="submit">Se connecter</button>
+    </form>
+
+    <p class="note">Remarque : tu dois posséder des identifiants valides. Le site peut aussi utiliser un système SSO/cookies qui empêche une soumission directe depuis une page externe.</p>
+  </div>
+</body>
+</html>
